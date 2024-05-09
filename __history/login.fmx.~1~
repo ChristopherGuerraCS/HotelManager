@@ -1,0 +1,80 @@
+object loginForm: TloginForm
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 440
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object usernameLabel: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 152.000000000000000000
+    TextSettings.Font.Size = 15.000000000000000000
+    Text = 'Username:'
+    TabOrder = 0
+    object Z: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 96.000000000000000000
+      TextSettings.Font.Size = 15.000000000000000000
+      Text = 'Password '
+      TabOrder = 1
+      object usernameEdit: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Text = 'Enter User here'
+        TextSettings.HorzAlign = Center
+        Position.X = 88.000000000000000000
+        Position.Y = -119.000000000000000000
+        Size.Width = 233.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = usernameEditClick
+        object passwordEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          Text = 'Enter Password'
+          TextSettings.HorzAlign = Center
+          Position.Y = 97.000000000000000000
+          Size.Width = 233.000000000000000000
+          Size.Height = 64.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = passwordEditClick
+        end
+      end
+    end
+  end
+  object loginButton: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Login'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = loginButtonClick
+  end
+  object messageLabel: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Please Enter Username and Password '
+    TabOrder = 3
+  end
+end

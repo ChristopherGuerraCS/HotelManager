@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "Room3.h"
+#include "bookRooms.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+Troom3Form *room3Form;
+//---------------------------------------------------------------------------
+__fastcall Troom3Form::Troom3Form(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall Troom3Form::cancelButtonClick(TObject *Sender)
+{
+	bookRoomsForm->Show();
+    room3Form->Hide();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall Troom3Form::confirmButtonClick(TObject *Sender)
+{
+	if (bookRoomsForm != nullptr) {
+
+		bookRoomsForm->room3Update(true);
+		bookRoomsForm->Show();
+		bookRoomsForm->room3Button->Visible = false;
+        bookRoomsForm->room3Text->Text = "Room 3 [Booked]";
+
+	}
+}
+//---------------------------------------------------------------------------
+

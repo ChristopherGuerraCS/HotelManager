@@ -1,0 +1,105 @@
+object Poool: TPoool
+  Left = 0
+  Top = 0
+  Caption = 'Poool'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Pool Towel'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Position.X = 360.000000000000000000
+    Position.Y = 144.000000000000000000
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object Label1: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 136.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Final Cost:'
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Position.X = 360.000000000000000000
+    Position.Y = 72.000000000000000000
+    Text = 'Current Cost:'
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 62.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Sunbathing Chair'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Pool Toys'
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Finalize Order'
+    OnClick = Button4Click
+  end
+  object Label3: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 88.000000000000000000
+    Text = '$15.00'
+    TabOrder = 7
+  end
+  object Label4: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 181.000000000000000000
+    Text = '$20.00'
+    TabOrder = 8
+  end
+  object Label5: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 272.000000000000000000
+    Text = '$8.00'
+    TabOrder = 9
+  end
+  object Button5: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 417.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 47.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Return'
+    OnClick = Button5Click
+  end
+end

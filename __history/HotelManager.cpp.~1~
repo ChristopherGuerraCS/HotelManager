@@ -1,0 +1,49 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#ifdef _WIN32
+#include <tchar.h>
+#endif
+#pragma hdrstop
+#include <System.StartUpCopy.hpp>
+//---------------------------------------------------------------------------
+USEFORM("Bar.cpp", Help);
+USEFORM("bookRooms.cpp", bookRoomsForm);
+USEFORM("Cafe.cpp", Cafee);
+USEFORM("Facility.cpp", Facilityy);
+USEFORM("login.cpp", loginForm);
+USEFORM("Mainn.cpp", Mainn);
+USEFORM("Pool.cpp", Poool);
+USEFORM("registration.cpp", registrationForm);
+USEFORM("Room1.cpp", room1Form);
+USEFORM("Room2.cpp", room2Form);
+USEFORM("Room3.cpp", room3Form);
+USEFORM("serviceMenu.cpp", serviceMenuForm);
+//---------------------------------------------------------------------------
+extern "C" int FMXmain()
+{
+	try
+	{
+		Application->Initialize();
+		Application->CreateForm(__classid(TMainn), &Mainn);
+		Application->CreateForm(__classid(Troom1Form), &room1Form);
+		Application->Run();
+	}
+	catch (Exception &exception)
+	{
+		Application->ShowException(&exception);
+	}
+	catch (...)
+	{
+		try
+		{
+			throw Exception("");
+		}
+		catch (Exception &exception)
+		{
+			Application->ShowException(&exception);
+		}
+	}
+	return 0;
+}
+//---------------------------------------------------------------------------
