@@ -1,0 +1,93 @@
+object registrationForm: TregistrationForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 440
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object nameLabel: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Name :'
+    TabOrder = 6
+  end
+  object nameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Position.X = 144.000000000000000000
+    Position.Y = 54.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ageLabel: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 119.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Age :'
+    TabOrder = 4
+  end
+  object ageEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 144.000000000000000000
+    Position.Y = 119.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object usernameLabel: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 183.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Username :'
+    TabOrder = 2
+  end
+  object usernameEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 144.000000000000000000
+    Position.Y = 183.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object passwordLabel: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Password :'
+    TabOrder = 0
+  end
+  object passwordEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 144.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object saveButton: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 289.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Save '
+    OnClick = saveButtonClick
+  end
+end

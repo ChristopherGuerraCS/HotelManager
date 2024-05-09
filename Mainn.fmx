@@ -1,0 +1,47 @@
+object Mainn: TMainn
+  Left = 0
+  Top = 0
+  Caption = 'Mainn'
+  ClientHeight = 440
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object mainLoginButton: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 219.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Login'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = mainLoginButtonClick
+    object mainRegistrationButton: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 184.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 97.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Registration'
+      TextSettings.Font.Size = 20.000000000000000000
+      OnClick = mainRegistrationButtonClick
+      object welcomeMessage: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = -128.000000000000000000
+        Position.Y = -128.000000000000000000
+        Size.Width = 233.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        Text = 
+          'Hello Welcome to Our Hotel, Please Register if you'#39're New, or cl' +
+          'ick Login'
+        TabOrder = 4
+      end
+    end
+  end
+end

@@ -1,1 +1,3 @@
 Ethan,20,Ethan,HotelManager,
+George,20,George,password,
+example,20,example,password,

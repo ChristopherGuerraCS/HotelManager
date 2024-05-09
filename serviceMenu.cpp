@@ -27,6 +27,7 @@ void __fastcall TserviceMenuForm::facilitiesPortalClick(TObject *Sender)
 {
 	Facilityy = new TFacilityy(this);
 	  Facilityy->Show();
+      serviceMenuForm->Hide();
 
 }
 //---------------------------------------------------------------------------
